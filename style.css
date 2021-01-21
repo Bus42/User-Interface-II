@@ -9,17 +9,19 @@ h2 {
 }
 
 nav>a,
-footer>span>a {
+footer>a {
     display: inline-block;
     border: 1px solid black;
     text-decoration: none;
     padding: 8px;
-    width: 80px;
+    width: 100px;
     color: black;
+    background-color: whitesmoke;
+    text-align: center;
 }
 
 nav>a:hover,
-footer>span>a:hover {
+footer>a:hover {
     color: whitesmoke;
     background-color: black;
 }
@@ -62,7 +64,7 @@ footer {
     height: 100px;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 2rem;
     background-color: lightgrey;
