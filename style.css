@@ -40,10 +40,14 @@ footer>span>a:hover {
     justify-content: space-between;
 }
 
-.fakeImage {
-    height: 400px;
-    width: 15vw;
-    border: 1px solid black;
+#gallery-wrapper>img {
+    max-width: 17vw;
+    object-fit: contain;
+    transition: all .5s;
+}
+
+#gallery-wrapper>img:hover {
+    transform: scale(2);
 }
 
 #gallery-text {
