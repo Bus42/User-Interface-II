@@ -1,6 +1,27 @@
+h1,
+h2 {
+    font-size: 2rem;
+}
+
 #intro {
     text-align: center;
     padding: 40px 0;
+}
+
+nav>a,
+footer>span>a {
+    display: inline-block;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 8px;
+    width: 80px;
+    color: black;
+}
+
+nav>a:hover,
+footer>span>a:hover {
+    color: whitesmoke;
+    background-color: black;
 }
 
 #intro>p {
