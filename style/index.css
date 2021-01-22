@@ -1,8 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Yusei+Magic&display=swap");
+:root {
+    font-family: "Roboto";
+}
+
+
 /* Elements */
 
 h1,
 h2 {
     font-size: 2rem;
+    font-family: "Yusei Magic";
 }
 
 footer {
@@ -80,16 +87,20 @@ header {
 
 .nav-link {
     display: inline-block;
-    border: 1px solid black;
     text-decoration: none;
     padding: 8px;
     width: 100px;
     color: black;
     background-color: whitesmoke;
     text-align: center;
+    font-family: "Yusei Magic";
+    border-radius: 12px;
 }
 
 .nav-link:hover {
     color: whitesmoke;
     background-color: black;
+    background-image: url(/assets/code_512.jpg);
+    background-position: center;
+    background-size: cover;
 }
