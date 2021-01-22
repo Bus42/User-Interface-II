@@ -46,15 +46,15 @@ footer>a:hover {
 #gallery-wrapper {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
-    align-content: space-around;
+    justify-content: center;
+    align-content: space-between;
 }
 
 #gallery-wrapper>img {
     object-fit: contain;
     transition: all 0.5s;
     z-index: 0;
-    width: clamp(200px, 17vw, 80vw)
+    width: clamp(200px, 17vw, 80vw);
 }
 
 #gallery-wrapper>img:hover {
@@ -67,7 +67,9 @@ footer>a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 20vw;
+    width: clamp(200px, 17vw, 80vw);
+    flex-grow: 1;
+    margin-left: 2rem;
 }
 
 #gallery-text>p {
