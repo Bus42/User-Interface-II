@@ -31,7 +31,7 @@ header {
     width: 100%;
     height: 33vh;
     margin: 2rem 0;
-    object-fit: fill;
+    object-fit: cover;
     overflow: hidden;
 }
 
