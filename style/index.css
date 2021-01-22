@@ -5,9 +5,69 @@ h2 {
     font-size: 2rem;
 }
 
+footer {
+    height: 100px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: lightgrey;
+}
+
 #intro {
     text-align: center;
     padding: 40px 0;
+}
+
+#intro>p {
+    padding: 0 10vw;
+}
+
+#fakeBanner {
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    margin: 2rem 0;
+}
+
+#gallery-wrapper_outer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+#gallery-wrapper_images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+
+#gallery-wrapper_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(200px, 17vw, 80vw);
+    flex-grow: 1;
+    margin-left: 2rem;
+}
+
+.gallery_text {
+    text-align: left;
+}
+
+.gallery-image {
+    object-fit: contain;
+    transition: all 0.5s;
+    z-index: 0;
+    width: clamp(200px, 17vw, 80vw);
+}
+
+.gallery-image:hover {
+    transform: scale(2);
+    z-index: 1;
+    border-radius: 8px;
 }
 
 .nav-link {
@@ -24,64 +84,4 @@ h2 {
 .nav-link:hover {
     color: whitesmoke;
     background-color: black;
-}
-
-#intro>p {
-    padding: 0 10vw;
-}
-
-#fakeBanner {
-    width: 100%;
-    height: 400px;
-    border: 1px solid black;
-    margin: 2rem 0;
-}
-
-#gallery {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-}
-
-#gallery-wrapper {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: space-between;
-}
-
-.gallery-image {
-    object-fit: contain;
-    transition: all 0.5s;
-    z-index: 0;
-    width: clamp(200px, 17vw, 80vw);
-}
-
-.gallery-image:hover {
-    transform: scale(2);
-    z-index: 1;
-    border-radius: 8px;
-}
-
-#gallery-text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: clamp(200px, 17vw, 80vw);
-    flex-grow: 1;
-    margin-left: 2rem;
-}
-
-#gallery-text>p {
-    text-align: left;
-}
-
-footer {
-    height: 100px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 2rem;
-    background-color: lightgrey;
 }
