@@ -31,14 +31,11 @@ footer {
 
 /* IDs */
 
-header {
+header,
+#intro {
     text-align: center;
     padding: 40px 0;
     margin: 0 1rem;
-}
-
-#intro>p {
-    padding: 0 10vw;
 }
 
 #banner-image {
