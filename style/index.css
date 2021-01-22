@@ -10,8 +10,7 @@ h2 {
     padding: 40px 0;
 }
 
-nav>a,
-footer>a {
+.nav-link {
     display: inline-block;
     border: 1px solid black;
     text-decoration: none;
@@ -22,8 +21,7 @@ footer>a {
     text-align: center;
 }
 
-nav>a:hover,
-footer>a:hover {
+.nav-link:hover {
     color: whitesmoke;
     background-color: black;
 }
@@ -52,14 +50,14 @@ footer>a:hover {
     align-content: space-between;
 }
 
-#gallery-wrapper>img {
+.gallery-image {
     object-fit: contain;
     transition: all 0.5s;
     z-index: 0;
     width: clamp(200px, 17vw, 80vw);
 }
 
-#gallery-wrapper>img:hover {
+.gallery-image:hover {
     transform: scale(2);
     z-index: 1;
     border-radius: 8px;
