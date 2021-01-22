@@ -37,27 +37,41 @@ footer>a:hover {
     margin: 2rem 0;
 }
 
-#gallery-wrapper {
+#gallery {
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
 }
 
+#gallery-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
 #gallery-wrapper>img {
-    max-width: 17vw;
     object-fit: contain;
-    transition: all .5s;
+    transition: all 0.5s;
+    z-index: 0;
+    width: clamp(200px, 17vw, 80vw)
 }
 
 #gallery-wrapper>img:hover {
     transform: scale(2);
+    z-index: 1;
+    border-radius: 8px;
 }
 
 #gallery-text {
     display: flex;
-    flex-flow: column nowrap;
     justify-content: center;
-    width: 15vw;
-    padding: 4rem;
+    align-items: center;
+    max-width: 20vw;
+}
+
+#gallery-text>p {
+    text-align: left;
 }
 
 footer {
