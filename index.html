@@ -11,14 +11,15 @@
 <body>
     <header>
         <h1>Greg Brewton</h1>
+        <!-- single nav component on page to ease navigation with screen readers -->
         <nav>
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
-            <a class="nav-link" href="contact.html">Contact</a>
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a tabindex="1" class="nav-link" href="index.html">Home</a>
+            <a tabindex="2" class="nav-link" href="about.html">About</a>
+            <a tabindex="3" class="nav-link" href="contact.html">Contact</a>
+            <a tabindex="4" class="nav-link" href="projects.html">Projects</a>
         </nav>
     </header>
-    <section id="intro">
+    <section tabindex="5" id="intro">
         <h2>Welcome to my portfolio!</h2>
         <p>
             I'm an aspiring web developer living on the high desert plains of eastern Colorado. My goal is to create modern, fast, responsive, and accessible cross-platform progressive web applications.
@@ -33,23 +34,40 @@
     </section>
     <section id="gallery-wrapper_outer">
         <div id="gallery-wrapper_images">
-            <a title="Built using React, Redux, MaterializeCSS, and Firebase" target="Blogosaur" href="https://net-ninja-mario-plan-ad7c1.firebaseapp.com/"><img class="gallery-image" src="/assets/blogosaurus.png" alt="screenshot of message board app" /></a>
-            <a title="Built with pure HTML, JS, and CSS - hosted on GitHub" target="JSCalc" href="https://bus42.github.io/JSCalculator/"><img class="gallery-image" src="/assets/JS_Calculator.png" alt="screenshot of JavaScript calculator app" /></a>
-            <a title="PWA built with React, MaterializeCSS, and Firebase" target="MTG Counter" href="https://counter42.studio42dev.com/"><img class="gallery-image" src="/assets/magic_counter.png" alt="screenshot of Magic: The Gathering counter app" /></a>
-            <a title="Built with pure HTML, JS, and CSS - hosted on GitHub" target="TicTacWars" href="https://bus42.github.io/tictactoe/"><img class="gallery-image" src="/assets/tictactoe.png" alt="screenshot of Tic-Tac-Toe app" /></a>
+            <!-- Includes useful title and alt atribute values for accesibility -->
+            <a tabindex="7" title="Built using React, Redux, MaterializeCSS, and Firebase" target="Blogosaur" href="https://net-ninja-mario-plan-ad7c1.firebaseapp.com/"><img class="gallery-image" src="/assets/blogosaurus.png" alt="screenshot of message board app" /></a>
+            <a tabindex="8" title="Built with pure HTML, JS, and CSS - hosted on GitHub" target="JSCalc" href="https://bus42.github.io/JSCalculator/"><img class="gallery-image" src="/assets/JS_Calculator.png" alt="screenshot of JavaScript calculator app" /></a>
+            <a tabindex="9" title="PWA built with React, MaterializeCSS, and Firebase" target="MTG Counter" href="https://counter42.studio42dev.com/"><img class="gallery-image" src="/assets/magic_counter.png" alt="screenshot of Magic: The Gathering counter app" /></a>
+            <a tabindex="10" title="Built with pure HTML, JS, and CSS - hosted on GitHub" target="TicTacWars" href="https://bus42.github.io/tictactoe/"><img class="gallery-image" src="/assets/tictactoe.png" alt="screenshot of Tic-Tac-Toe app" /></a>
         </div>
         <div id="gallery-wrapper_text">
-            <p class="gallery_text">
+            <p tabindex="6" class="gallery_text">
                 These are some of the projects I have built while self-learning. Some use no libraries or frameworks, while others use them heavily.
             </p>
         </div>
     </section>
     <footer>
-        <a id="code" class="nav-link" href="https://codepen.io/bus42">CodePen</a>
-        <a id="git" class="nav-link" href="https://github.com/bus42">GitHub</a>
-        <a id="cta" class="nav-link" href="contact.html">Contact Me</a>
-        <a id="twit" class="nav-link" href="https://twitter.com/Bus42a">Twitter</a>
-        <a id="fcc" class="nav-link" href="https://www.freecodecamp.org/bus42">freeCodeCamp</a
+        <a tabindex="12" id="code" class="nav-link" href="https://codepen.io/bus42">CodePen</a
+      >
+      <a tabindex="13" id="git" class="nav-link" href="https://github.com/bus42"
+        >GitHub</a
+      >
+      <a tabindex="11" id="cta" class="nav-link" href="contact.html"
+        >Contact Me</a
+      >
+      <a
+        tabindex="14"
+        id="twit"
+        class="nav-link"
+        href="https://twitter.com/Bus42a"
+        >Twitter</a
+      >
+      <a
+        tabindex="15"
+        id="fcc"
+        class="nav-link"
+        href="https://www.freecodecamp.org/bus42"
+        >freeCodeCamp</a
       >
     </footer>
   </body>
