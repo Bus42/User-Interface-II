@@ -125,9 +125,9 @@ header,
         align-content: space-around;
     }
     #gallery-wrapper_text {
-        display: relative;
-        width: 100%;
-        text-align: center;
+        display: flex;
+        width: auto;
+        text-align: flex-start;
     }
     .gallery-image {
         width: 60vw;
@@ -136,6 +136,7 @@ header,
         transform: scale(1.5);
     }
     .nav-link {
+        font-size: 0.8em;
         display: inline-block;
         text-decoration: none;
         padding: 2px;
@@ -147,10 +148,10 @@ header,
         border-radius: none;
     }
     .nav-link::before {
-        content: "< "
+        content: "< ";
     }
     .nav-link::after {
-        content: " />"
+        content: " />";
     }
     .nav-link:hover {
         background-color: inherit;
@@ -160,22 +161,58 @@ header,
 }
 
 @media screen and (max-width: 500px) {
-    .nav-link {
-        display: inline-block;
-        text-decoration: none;
-        padding: 8px;
-        width: 100px;
-        color: black;
-        background-color: whitesmoke;
-        text-align: center;
-        font-family: "Yusei Magic";
-        border-radius: 12px;
+    #gallery-wrapper_images {
+        justify-content: center;
+        align-content: center;
+        overflow: hidden;
     }
-    .nav-link:hover {
-        color: whitesmoke;
-        background-color: black;
-        background-image: url(/assets/code_512.jpg);
-        background-position: center;
-        background-size: cover;
+    .gallery-image {
+        width: 90vw;
+    }
+    .gallery-image:hover {
+        transform: scale(1.1);
+    }
+    #gallery-wrapper_text {
+        display: flex;
+        width: auto;
+        text-align: flex-start;
+    }
+    .nav-link {
+        border-radius: 1px !important;
+    }
+    .nav-link::before {
+        content: none;
+    }
+    .nav-link::after {
+        content: none;
+    }
+    .nav-link+.nav-link::before {
+        content: "| ";
+    }
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(5 auto);
+        gap: 5px 5px;
+        grid-template-areas: ". . cta . ." "code git twit fcc .";
+    }
+    #code {
+        grid-area: code;
+    }
+    #git {
+        grid-area: git;
+    }
+    #cta {
+        grid-area: cta;
+        text-align: center;
+    }
+    footer>.nav-link::before {
+        content: none !important;
+    }
+    #twit {
+        grid-area: twit;
+    }
+    #fcc {
+        grid-area: fcc;
     }
 }
