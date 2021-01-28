@@ -8,7 +8,7 @@
 
 body {
     background-color: #202020;
-    color: #C4C4C4;
+    color: #c4c4c4;
     margin: 0;
 }
 
@@ -66,7 +66,7 @@ header,
     align-items: center;
     width: clamp(200px, 17vw, 80vw);
     flex-grow: 1;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 
@@ -85,7 +85,8 @@ header,
     border-radius: 12px;
 }
 
-.gallery-image:hover {
+.gallery-image:hover,
+.gallery-image:focus {
     transform: scale(2);
     z-index: 1;
     border-radius: 0;
@@ -104,10 +105,120 @@ header,
     border-radius: 12px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: whitesmoke;
     background-color: black;
     background-image: url(/assets/code_512.jpg);
     background-position: center;
     background-size: cover;
+}
+
+
+/* maximum width at which to apply the following styles */
+
+@media screen and (max-width: 800px) {
+    #gallery-wrapper_outer {
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+    }
+    #gallery-wrapper_images {
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    #gallery-wrapper_text {
+        display: flex;
+        width: auto;
+        text-align: flex-start;
+        margin-left: 0;
+    }
+    .gallery-image {
+        width: 60vw;
+    }
+    .gallery-image:hover,
+    .gallery-image:focus {
+        transform: scale(1.5);
+    }
+    .nav-link {
+        font-size: 0.8em;
+        display: inline-block;
+        text-decoration: none;
+        padding: 2px;
+        width: fit-content;
+        color: whitesmoke;
+        background-color: transparent;
+        text-align: center;
+        font-family: "Yusei Magic";
+        border-radius: none;
+    }
+    .nav-link::before {
+        content: "< ";
+    }
+    .nav-link::after {
+        content: " />";
+    }
+    .nav-link:hover,
+    .nav-link:focus {
+        background-color: inherit;
+        background-image: none;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #gallery-wrapper_images {
+        justify-content: center;
+        align-content: center;
+        overflow: hidden;
+    }
+    .gallery-image {
+        width: 90vw;
+    }
+    .gallery-image:hover,
+    .gallery-image:focus {
+        transform: scale(1.1);
+    }
+    #gallery-wrapper_text {
+        display: flex;
+        width: auto;
+        text-align: flex-start;
+    }
+    .nav-link {
+        border-radius: 1px !important;
+    }
+    .nav-link::before {
+        content: none;
+    }
+    .nav-link::after {
+        content: none;
+    }
+    .nav-link+.nav-link::before {
+        content: "| ";
+    }
+    footer {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: repeat(4 1fr);
+        gap: 5px 5px;
+        grid-template-areas: "cta . . ." "code git twit fcc";
+    }
+    #code {
+        grid-area: code;
+    }
+    #git {
+        grid-area: git;
+    }
+    #cta {
+        grid-area: cta;
+        text-align: center;
+    }
+    footer>.nav-link::before {
+        content: none !important;
+    }
+    #twit {
+        grid-area: twit;
+    }
+    #fcc {
+        grid-area: fcc;
+    }
 }
