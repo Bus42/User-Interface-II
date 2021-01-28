@@ -52,9 +52,8 @@ Once you finish the minimum viable project, work on any of the following stretch
   - [X]  iPhone: 360×640
   - [X]  Laptop: 1366×768
   - [X]  Widescreen: 1920×1080
-- [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
+- [X] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
 - [ ] Start over with min-width media queries to get a feel for how a mobile first approach would be like. I recommend making a branch of all your content in a new folder named "mobile-first" to keep it separate
-- [ ] Test your webpage's accessibility with a screen reader like [this](https://support.google.com/accessibility/answer/7031755?hl=en)
 
 ## FAQs
 
