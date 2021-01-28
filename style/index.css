@@ -85,7 +85,8 @@ header,
     border-radius: 12px;
 }
 
-.gallery-image:hover {
+.gallery-image:hover,
+.gallery-image:focus {
     transform: scale(2);
     z-index: 1;
     border-radius: 0;
@@ -104,7 +105,8 @@ header,
     border-radius: 12px;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
     color: whitesmoke;
     background-color: black;
     background-image: url(/assets/code_512.jpg);
@@ -132,7 +134,8 @@ header,
     .gallery-image {
         width: 60vw;
     }
-    .gallery-image:hover {
+    .gallery-image:hover,
+    .gallery-image:focus {
         transform: scale(1.5);
     }
     .nav-link {
@@ -153,7 +156,8 @@ header,
     .nav-link::after {
         content: " />";
     }
-    .nav-link:hover {
+    .nav-link:hover,
+    .nav-link:focus {
         background-color: inherit;
         background-image: none;
         text-transform: uppercase;
@@ -169,7 +173,8 @@ header,
     .gallery-image {
         width: 90vw;
     }
-    .gallery-image:hover {
+    .gallery-image:hover,
+    .gallery-image:focus {
         transform: scale(1.1);
     }
     #gallery-wrapper_text {
