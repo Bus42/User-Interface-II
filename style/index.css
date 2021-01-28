@@ -135,4 +135,47 @@ header,
     .gallery-image:hover {
         transform: scale(1.5);
     }
+    .nav-link {
+        display: inline-block;
+        text-decoration: none;
+        padding: 2px;
+        width: fit-content;
+        color: whitesmoke;
+        background-color: transparent;
+        text-align: center;
+        font-family: "Yusei Magic";
+        border-radius: none;
+    }
+    .nav-link::before {
+        content: "< "
+    }
+    .nav-link::after {
+        content: " />"
+    }
+    .nav-link:hover {
+        background-color: inherit;
+        background-image: none;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .nav-link {
+        display: inline-block;
+        text-decoration: none;
+        padding: 8px;
+        width: 100px;
+        color: black;
+        background-color: whitesmoke;
+        text-align: center;
+        font-family: "Yusei Magic";
+        border-radius: 12px;
+    }
+    .nav-link:hover {
+        color: whitesmoke;
+        background-color: black;
+        background-image: url(/assets/code_512.jpg);
+        background-position: center;
+        background-size: cover;
+    }
 }
