@@ -8,7 +8,7 @@
 
 body {
     background-color: #202020;
-    color: #C4C4C4;
+    color: #c4c4c4;
     margin: 0;
 }
 
@@ -110,4 +110,29 @@ header,
     background-image: url(/assets/code_512.jpg);
     background-position: center;
     background-size: cover;
+}
+
+
+/* maximum width at which to apply the following styles */
+
+@media screen and (max-width: 800px) {
+    #gallery-wrapper_outer {
+        flex-flow: column-reverse nowrap;
+        justify-content: center;
+    }
+    #gallery-wrapper_images {
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    #gallery-wrapper_text {
+        display: relative;
+        width: 100%;
+        text-align: center;
+    }
+    .gallery-image {
+        width: 60vw;
+    }
+    .gallery-image:hover {
+        transform: scale(1.5);
+    }
 }
