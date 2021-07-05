@@ -1,11 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Interface II</title>
+    <link rel="stylesheet" href="/style/index.css" />
 </head>
+
 <body>
-    
-</body>
+    <header>
+        <h1>Greg Brewton</h1>
+        <nav>
+            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="projects.html">Projects</a>
+        </nav>
+    </header>
+    <section id="intro">
+        <h2>Welcome to my portfolio!</h2>
+        <p>
+            I'm an aspiring web developer living on the high desert plains of eastern Colorado. My goal is to create modern, fast, responsive, and accessible cross-platform progressive web applications.
+        </p>
+        <p>
+            My ideal stack doesn't have a cool acronym like MEAN. I'm not sure it's technically a stack. I like using React to scaffold my applications (create-react-app), MaterializeCSS for UI/UX and styling, and Google Firebase for backend stuff like the database
+            or cloud functions. I use Firebase for hosting as well because it's awesome. I can write, run, test, and deploy from the CLI in VS Code - which is also awesome.
+        </p>
+    </section>
+    <section id="banner-wrapper">
+        <img id="banner-image" src="/assets/keyboard_1920.jpg" alt="closeup of keyboard with multi-colored backlighting" />
+    </section>
+    <section id="gallery-wrapper_outer">
+        <div id="gallery-wrapper_images">
+            <a title="Built using React, Redux, MaterializeCSS, and Firebase" target="Blogosaur" href="https://net-ninja-mario-plan-ad7c1.firebaseapp.com/"><img class="gallery-image" src="/assets/blogosaurus.png" alt="screenshot of message board app" /></a>
+            <a title="Built with pure HTML, JS, and CSS - hosted on GitHub" target="JSCalc" href="https://bus42.github.io/JSCalculator/"><img class="gallery-image" src="/assets/JS_Calculator.png" alt="screenshot of JavaScript calculator app" /></a>
+            <a title="PWA built with React, MaterializeCSS, and Firebase" target="MTG Counter" href="https://counter42.studio42dev.com/"><img class="gallery-image" src="/assets/magic_counter.png" alt="screenshot of Magic: The Gathering counter app" /></a>
+            <a title="Built with pure HTML, JS, and CSS - hosted on GitHub" target="TicTacWars" href="https://bus42.github.io/tictactoe/"><img class="gallery-image" src="/assets/tictactoe.png" alt="screenshot of Tic-Tac-Toe app" /></a>
+        </div>
+        <div id="gallery-wrapper_text">
+            <p class="gallery_text">
+                These are some of the projects I have built while self-learning. Some use no libraries or frameworks, while others use them heavily.
+            </p>
+        </div>
+    </section>
+    <footer>
+        <a class="nav-link" href="https://codepen.io/bus42">CodePen</a>
+        <a class="nav-link" href="https://github.com/bus42">GitHub</a>
+        <a class="nav-link" href="contact.html">Contact Me</a>
+        <a class="nav-link" href="https://twitter.com/Bus42a">Twitter</a>
+        <a class="nav-link" href="https://www.freecodecamp.org/bus42">freeCodeCamp</a
+      >
+    </footer>
+  </body>
 </html>
